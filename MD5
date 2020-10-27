@@ -1,4 +1,4 @@
-b7eeed2b958bdefc22e163f2ac36d496 *DESCRIPTION
+32df5b4f4c22a9ced3503bff0d3aeaa8 *DESCRIPTION
 94cf07cbad45794cdbbd4a3c176d9a8e *NAMESPACE
 948e828f013836a6a2d7c5f88ba07c01 *NEWS.md
 e31bd987233db8eb858aad3e268c5609 *R/allClasses.R
@@ -28,19 +28,19 @@ baf64dfe06e22bd4db8046b9778b6f1e *data/lendingClub.rda
 cdaf15a5959c94c749332bf13b56cc47 *inst/CITATION
 5b6681782e27bfd3c613c6bb2e975577 *inst/doc/appendix_tree_biasedness.R
 899d3c8dc4d97b9511093e63b1707cd4 *inst/doc/appendix_tree_biasedness.Rmd
-fd62a9dc554573b36e1a35400ba8eb7c *inst/doc/appendix_tree_biasedness.html
+c71bc0d2642bedf1c22fb836dd75726d *inst/doc/appendix_tree_biasedness.html
 7584472cf9c1cc870e57953336824283 *inst/doc/figure1.R
 a09baa43a92b556c5bc24d452361c122 *inst/doc/figure1.Rmd
-47158a9af46d29d84a759c95ba80a35f *inst/doc/figure1.html
+8548a795e151bf5edfb430211bfc6dab *inst/doc/figure1.html
 eee628dc4e143e0e98fae7fd4df88a9e *inst/doc/figure2.R
 869ce9326b7d197e7f7e982d554db997 *inst/doc/figure2.Rmd
-3409a325510f49ac74bc5955f52ea7a7 *inst/doc/figure2.html
+3dac0aa7cd5861dd75d767635ac238ee *inst/doc/figure2.html
 f97bbcc65b40bcf51c9bb17550af422a *inst/doc/figure3.R
 9e607a42802e4adeaa2361fe57046c6d *inst/doc/figure3.Rmd
-0dc4c8688e8a6ecb881849109e90b163 *inst/doc/figure3.html
-2c62bbeb3516d273dfaae6d1516c9a4a *inst/doc/scoringTools.R
-3bf61d98e5f16f3d7ae5e57f8f532aad *inst/doc/scoringTools.Rmd
-4fe99c21aab5ba5334f9e742841522ec *inst/doc/scoringTools.html
+29312a8b2c7e7a338aab88b9f8afb008 *inst/doc/figure3.html
+8f00259bbc60810562ba1db677b2c9cc *inst/doc/scoringTools.R
+cb2de49c4f96b4f898fc08796004beed *inst/doc/scoringTools.Rmd
+b2aa76bc992b89cd34343906ffc18b1f *inst/doc/scoringTools.html
 bafc27fba7176b728c1c61f150562a76 *inst/document.R
 33525fc8c0dc2252a33be8c8935b08f8 *inst/lint.R
 aa7baa41a97e2d8a5e9c81acca5f2a51 *inst/rhubcheck.R
@@ -79,7 +79,7 @@ e90f40f55a1ed8639c95da8d2bb231f1 *tests/testthat/test-chiM.R
 f8bec0a22dcad0f409a0e6481da21a54 *tests/testthat/test-cut-dataset.R
 64cc637b0e19e759842e6965c4fd7ad6 *tests/testthat/test-echi2.R
 7ac5695af69dc38cbfd478d90e4228a5 *tests/testthat/test-fuzzy-augmentation.R
-4d104370268445f3dccc2477ff03f64c *tests/testthat/test-mdlp.R
+b0e496fac49c99f7440f0be3be1f400f *tests/testthat/test-mdlp.R
 56ee47c29be3b5ea772ede51d506e173 *tests/testthat/test-methods.R
 df07afd72901cd2e0d80cfbab1cf6cf8 *tests/testthat/test-modchi2.R
 47e1e2784d9478c90090c66610ec5e89 *tests/testthat/test-parcelling.R
@@ -90,4 +90,4 @@ c0d1d35cf54f8fb7df0a02ffad50544b *tests/testthat/test-topdown.R
 a09baa43a92b556c5bc24d452361c122 *vignettes/figure1.Rmd
 869ce9326b7d197e7f7e982d554db997 *vignettes/figure2.Rmd
 9e607a42802e4adeaa2361fe57046c6d *vignettes/figure3.Rmd
-3bf61d98e5f16f3d7ae5e57f8f532aad *vignettes/scoringTools.Rmd
+cb2de49c4f96b4f898fc08796004beed *vignettes/scoringTools.Rmd

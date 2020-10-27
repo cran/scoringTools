@@ -119,6 +119,7 @@ summary(discrete_modele)
 ## ---- echo=FALSE, results='asis'----------------------------------------------
 predict(discrete_modele, x)
 
-## ---- echo=FALSE, results='asis'----------------------------------------------
-plot(discrete_modele, type = "ROC")
+## ---- eval=FALSE, echo=FALSE, results='asis'----------------------------------
+#  # NOT RUN since re-building this vignette fails on some distros (Mac OS and Solaris) of CRAN (because plot uses plotly).
+#  plot(discrete_modele, type = "ROC")
 
