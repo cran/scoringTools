@@ -1,8 +1,8 @@
 Package: scoringTools
 Type: Package
 Title: Credit Scoring Tools
-Version: 0.1.1
-Date: 2020-10-26
+Version: 0.1.2
+Date: 2020-12-16
 Authors@R: c(person("Adrien", "Ehrhardt", email = "adrien.ehrhardt@centraliens-lille.org",
                   role = c("aut", "cre")))
 Maintainer: Adrien Ehrhardt <adrien.ehrhardt@centraliens-lille.org>
@@ -20,11 +20,12 @@ VignetteBuilder: knitr
 Collate: 'allClasses.R' 'allMethods.R' 'augmentation.R'
         'check_consistency.R' 'chi2.R' 'chiM.R' 'cut.dataset.R'
         'data.R' 'discretize.cutp.R' 'echi2.R' 'fuzzyAugmentation.R'
-        'get_cutp.R' 'mdlp.R' 'modChi2.R' 'model_f.R'
-        'normalizedGini.R' 'parcelling.R' 'reclassification.R'
-        'runDemo.R' 'scoring.R' 'topdown.R' 'twins.R'
+        'generate_data.R' 'get_cutp.R' 'mdlp.R' 'methodsDisc.R'
+        'modChi2.R' 'model_f.R' 'normalizedGini.R' 'parcelling.R'
+        'reclassification.R' 'runDemo.R' 'scoringTools.R' 'topdown.R'
+        'twins.R'
 NeedsCompilation: no
-Packaged: 2020-10-26 17:36:26 UTC; adimajo
+Packaged: 2021-01-10 15:31:21 UTC; adimajo
 Author: Adrien Ehrhardt [aut, cre]
 Repository: CRAN
-Date/Publication: 2020-10-27 07:50:02 UTC
+Date/Publication: 2021-01-10 17:20:02 UTC

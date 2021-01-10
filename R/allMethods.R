@@ -74,17 +74,34 @@ methods::setGeneric("predict")
 #' @param object The S4 discretization object.
 #' @param newdata The test dataframe to discretize and for which we wish to have predictions.
 predict.discretization <- function(object, newdata) {
-  predict(object = object@best.disc[[1]], newdata = data.frame(discretize_cutp(object@parameters[[1]][object@parameters[[6]][[1]], ], object@best.disc[[2]][["Disc.data"]], newdata)) %>%
-    dplyr::mutate_if(is.numeric, as.factor), type = "response")
+  df_to_predict <- data.frame(
+    discretize_cutp(
+      cont_test_set = newdata,
+      disc_train_set = object@best.disc[[2]][["Disc.data"]],
+      cont_train_set = object@parameters[[1]][object@parameters[[6]][[1]], ]
+    )
+  ) %>%
+    dplyr::mutate_if(is.numeric, as.factor)
+  return(predict(
+    object = object@best.disc[[1]],
+    newdata = df_to_predict, type = "response"
+  ))
 }
 
 #' Prediction on a raw test set of the logistic regression model after reject inference.
 #' @rdname predict
-#' @param object The S4 discretization object.
+#' @param object The S4 reject_infered object.
 #' @param newdata The test dataframe to discretize and for which we wish to have predictions.
 #' @param ... Additional parameters to pass on to base predict.
 predict.reject_infered <- function(object, newdata, ...) {
-  predict(object = object@infered_model, newdata = data.frame(x = newdata), ...)
+  if (object@method_name == "twins") {
+    newdata <- data.frame(x = newdata)
+    newdata$score_acc <- predict(object@acceptance_model, newdata = newdata)
+    newdata$score_def <- predict(object@financed_model, newdata = newdata)
+    return(predict(object = object@infered_model, newdata = newdata, ...))
+  } else {
+    return(predict(object = object@infered_model, newdata = data.frame(x = newdata), ...))
+  }
 }
 
 #' Prediction on a raw test set of the best logistic regression model on discretized data.
